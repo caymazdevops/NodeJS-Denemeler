@@ -1,12 +1,8 @@
-const express = require('express');
-const app = express();
-const hostname = '127.0.0.1';
-const port = 3000;
+//let name = 'Yasar';
+//console.log(name);
 
-app.get('/', (req, res) => {
-  res.send('Merhaba Dünya');
-});
+let selamla = (name) => {
+  console.log(`Merhaba ${name}`);
+};
 
-app.listen(port, () => {
-  console.log(`Server started at http://${hostname}:${port}/`);
-});
+selamla('kadir');
